@@ -1,0 +1,348 @@
+/* Declare global CSS variables in :root */
+:root {
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --blanket: rgba(48, 50, 55, 0.20000000298023224);
+
+  /* GREY */
+  --grey--50: rgba(249, 250, 251, 1);
+  --grey--75: rgba(247, 249, 252, 1);
+  --grey--100: rgba(240, 242, 245, 1);
+  --grey--200: rgba(228, 231, 236, 1);
+  --grey--300: rgba(208, 213, 221, 1);
+  --grey--400: rgba(152, 162, 179, 1);
+  --grey--500: rgba(102, 113, 133, 1);
+  --grey--600: rgba(71, 83, 103, 1);
+  --grey--700: rgba(52, 64, 84, 1);
+  --grey--800: rgba(29, 39, 57, 1);
+  --grey--900-base: rgba(16, 25, 40, 1);
+
+  /* SUCCESS */
+  --success--50: rgba(231, 246, 236, 1);
+  --success--75: rgba(181, 227, 196, 1);
+  --success--100: rgba(145, 214, 168, 1);
+  --success--200: rgba(95, 195, 129, 1);
+  --success--300: rgba(64, 184, 105, 1);
+  --success--400: rgba(15, 151, 61, 1);
+  --success--500-base: rgba(9, 145, 55, 1);
+  --success--600: rgba(4, 128, 46, 1);
+  --success--700: rgba(3, 107, 38, 1);
+  --success--800: rgba(1, 91, 32, 1);
+  --success--900: rgba(0, 70, 23, 1);
+
+  /* NEGATIVE */
+  --negative--50: rgba(251, 234, 233, 1);
+  --negative--75: rgba(242, 188, 186, 1);
+  --negative--100: rgba(235, 155, 152, 1);
+  --negative--200: rgba(226, 110, 106, 1);
+  --negative--300: rgba(221, 82, 77, 1);
+  --negative--400: rgba(212, 38, 32, 1);
+  --negative--500-base: rgba(203, 26, 20, 1);
+  --negative--600: rgba(186, 17, 11, 1);
+  --negative--700: rgba(158, 10, 5, 1);
+  --negative--800: rgba(128, 5, 1, 1);
+  --negative--900: rgba(89, 16, 0, 1);
+
+  /* WARNING */
+  --warning--50: rgba(254, 246, 231, 1);
+  --warning--75: rgba(251, 226, 183, 1);
+  --warning--100: rgba(247, 211, 148, 1);
+  --warning--200: rgba(247, 193, 100, 1);
+  --warning--300: rgba(245, 181, 70, 1);
+  --warning--400: rgba(243, 162, 24, 1);
+  --warning--500-base: rgba(221, 144, 13, 1);
+  --warning--600: rgba(173, 111, 7, 1);
+  --warning--700: rgba(134, 85, 3, 1);
+  --warning--800: rgba(102, 65, 1, 1);
+  --warning--900: rgba(82, 51, 0, 1);
+
+  /* WINE */
+  --wine--wine-50: rgba(248, 232, 239, 1);
+  --wine--wine-100: rgba(233, 184, 204, 1);
+  --wine--wine-200: rgba(222, 150, 180, 1);
+  --wine--wine-300: rgba(207, 102, 145, 1);
+  --wine--wine-400: rgba(198, 72, 124, 1);
+  --wine--wine-500-base: rgba(184, 26, 91, 1);
+  --wine--wine-600: rgba(167, 24, 83, 1);
+  --wine--wine-700: rgba(131, 18, 65, 1);
+  --wine--wine-800: rgba(101, 14, 50, 1);
+  --wine--wine-900: rgba(77, 11, 38, 1);
+
+  /* PURPLE */
+  --purple--purple-50: rgba(248, 232, 248, 1);
+  --purple--purple-100: rgba(233, 184, 233, 1);
+  --purple--purple-200: rgba(222, 150, 222, 1);
+  --purple--purple-300: rgba(207, 102, 207, 1);
+  --purple--purple-400: rgba(197, 72, 198, 1);
+  --purple--purple-500-base: rgba(183, 26, 184, 1);
+  --purple--purple-600: rgba(167, 24, 167, 1);
+  --purple--purple-700: rgba(130, 18, 131, 1);
+  --purple--purple-800: rgba(101, 14, 101, 1);
+  --purple--purple-900: rgba(77, 11, 77, 1);
+
+  /* SUPPORTING */
+  --supporting--supporting-50: rgba(230, 236, 231, 1);
+  --supporting--supporting-100: rgba(179, 196, 180, 1);
+  --supporting--supporting-200: rgba(142, 168, 143, 1);
+  --supporting--supporting-300: rgba(90, 128, 92, 1);
+  --supporting--supporting-400: rgba(58, 104, 61, 1);
+  --supporting--supporting-500-base: rgba(9, 66, 12, 1);
+  --supporting--supporting-600: rgba(8, 60, 11, 1);
+  --supporting--supporting-700: rgba(6, 47, 9, 1);
+  --supporting--supporting-800: rgba(5, 36, 7, 1);
+  --supporting--supporting-900: rgba(4, 28, 5, 1);
+  /*  */
+  --primary--primary-50: rgba(232, 248, 233, 1);
+  --primary--primary-75: rgba(212, 242, 214, 1);
+  --primary--primary-100: rgba(184, 233, 186, 1);
+  --primary--primary-200: rgba(149, 222, 152, 1);
+  --primary--primary-300: rgba(101, 207, 106, 1);
+  --primary--primary-400: rgba(71, 198, 77, 1);
+  --primary--primary-500-base: rgba(25, 184, 32, 1);
+  --primary--primary-600: rgba(23, 167, 29, 1);
+  --primary--primary-700: rgba(18, 131, 23, 1);
+  --primary--primary-800: rgba(14, 101, 18, 1);
+  --primary--primary-900: rgba(11, 77, 13, 1);
+  /*  */
+  --foundation----orange--orange-50: rgba(252, 236, 233, 1);
+  --foundation----orange--orange-100: rgba(247, 196, 186, 1);
+  --foundation----orange--orange-200: rgba(243, 168, 152, 1);
+  --foundation----orange--orange-300: rgba(238, 128, 106, 1);
+  --foundation----orange--orange-400: rgba(234, 103, 77, 1);
+  --foundation----orange--orange-500: rgba(229, 65, 32, 1);
+  --foundation----orange--orange-600: rgba(208, 59, 29, 1);
+  --foundation----orange--orange-700: rgba(163, 46, 23, 1);
+  --foundation----orange--orange-800: rgba(126, 36, 18, 1);
+  --foundation----orange--orange-900: rgba(96, 27, 13, 1);
+
+  /* Text-size styles */
+  --display---display--regular: 72px;
+  --display---display--medium: 72px;
+  --display---display--bold: 72px;
+  --h1---heading-1--bold: 48px;
+  --h1---heading-1--medium: 48px;
+  --h1---heading-1--regular: 48px;
+  --h1---heading-1--small--bold: 34px;
+  --h1---heading-1--small--medium: 34px;
+  --h1---heading-1--small--regular: 34px;
+  --h2---heading-2--bold: 34px;
+  --h2---heading-2--medium: 34px;
+  --h2---heading-2--regular: 34px;
+  --h2---heading-2--small--bold: 24px;
+  --h2---heading-2--small--medium: 24px;
+  --h2---heading-2--small--regular: 24px;
+  --h3---heading-3--bold: 24px;
+  --h3---heading-3--medium: 24px;
+  --h3---heading-3--regular: 24px;
+  --h3---heading-3--small--bold: 20px;
+  --h3---heading-3--small--medium: 20px;
+  --h3---heading-3--small--regular: 20px;
+  --h4---heading-4--bold: 20px;
+  --h4---heading-4--medium: 20px;
+  --h4---heading-4--regular: 20px;
+  --h4---heading-4--small--bold: 18px;
+  --h4---heading-4--small--medium: 18px;
+  --h4---heading-4--small--regular: 18px;
+  --h5---heading-5--bold: 18px;
+  --h5---heading-5--medium: 18px;
+  --h5---heading-5--regular: 18px;
+  --h5---heading-5--small--bold: 16px;
+  --h5---heading-5--small--medium: 16px;
+  --h5---heading-5--small--regular: 16px;
+  --h6---heading-6--bold: 16px;
+  --h6---heading-6--medium: 16px;
+  --h6---heading-6--regular: 16px;
+  --h6---heading-6--small--bold: 14px;
+  --h6---heading-6--small--medium: 14px;
+  --h6---heading-6--small--regular: 14px;
+  --buttons---button--large: 18px;
+  --buttons---button--medium: 16px;
+  --buttons---button--small: 14px;
+  --buttons---button--micro: 12px;
+  --body--large---body--large--bold: 16px;
+  --body--large---body--large--medium: 16px;
+  --body--large---body--large--regular: 16px;
+  --body--large---special---underline: 16px;
+  --body--large---special---inline: 16px;
+  --body--small---body--small--bold: 14px;
+  --body--small---body--small--medium: 14px;
+  --body--small---body--small--regular: 14px;
+  --body--small---special---underline: 14px;
+  --body--small---special---inline: 14px;
+  --body--micro---body--micro--bold: 12px;
+  --body--micro---body--micro--medium: 12px;
+  --body--micro---body--micro--regular: 12px;
+  --body--micro---special---underline: 12px;
+  --body--micro---special---inline: 12px;
+  --caption---caption--bold: 10px;
+  --caption---caption--medium: 10px;
+  --caption---caption--regular: 10px;
+
+  /* Effect styles */
+  --shadow-line: 0px 0px 0px rgba(251, 241, 241, 1);
+  --shadow--hover: 0px 0px 0px rgba(209, 207, 207, 1), 0px 1px 2px rgba(16, 24, 40, 0.06), 0px 1px 3px rgba(16, 24, 40, 0.1);
+  --list: 0px 4px 12px rgba(23, 43, 77, 0.08), 0px 1px 8px rgba(0, 6, 125, 0.1);
+  --neutral--button-shadow: 0px 1px 2px rgba(228, 231, 236, 1);
+  --input-active-shadow: 0px 0px 0px rgba(231, 246, 236, 1);
+  --shadow---shadow__-x-small: 0px 3px 2px rgba(71, 83, 103, 0.05);
+  --shadow---shadow__-small: 0px 4px 8px rgba(71, 83, 103, 0.1);
+  --shadow---shadow__-medium: 0px 12px 16px rgba(71, 83, 103, 0.1);
+  --shadow---shadow__-large: 0px 20px 24px rgba(71, 83, 103, 0.15);
+  --shadow---shadow__-x-large: 0px 20px 25px rgba(71, 83, 103, 0.2);
+  --shadow---shadow__-x-x-large: 0px 25px 50px rgba(71, 83, 103, 0.25);
+  --focus---focus: 0px 0px 0px rgba(48, 105, 254, 1), 0px 0px 0px rgba(255, 255, 255, 1);
+  --other---date__-picker: inset 0px -2px 0px rgba(18, 82, 247, 1), 0px 3px 4px rgba(0, 0, 0, 0.12);
+  --outline---white-2px: 0px 0px 0px rgba(255, 255, 255, 1);
+  --blur--small: ;
+  --blur--medium: ;
+  --blur---large: ;
+  --blur---x-largee: ;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+
+    --fs-nav: var(--fs-300);
+  }
+}
+
+/* Utility classes */
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+
+.text-accent-100 {
+  color: var(--clr-accent-100);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+
+
+:root {
+  --main-color: #3498db;
+  --secondary-color: #e74c3c;
+  --font-size-base: 16px;
+  --spacing-unit: 0.5rem;
+  /* Define a global spacing unit */
+}
+
+/* Utility classes that use CSS variables */
+.m-1 {
+  margin: var(--spacing-unit);
+}
+
+.m-2 {
+  margin: calc(2 * var(--spacing-unit));
+}
+
+.m-3 {
+  margin: calc(4 * var(--spacing-unit));
+}
+
+.p-1 {
+  padding: var(--spacing-unit);
+}
+
+.p-2 {
+  padding: calc(2 * var(--spacing-unit));
+}
+
+.p-3 {
+  padding: calc(4 * var(--spacing-unit));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Use the CSS variables within utility classes */
+.text-primary {
+  color: var(--main-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-lg {
+  font-size: calc(var(--font-size-base) * 1.25);
+}
