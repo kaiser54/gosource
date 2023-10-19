@@ -9,3 +9,70 @@
    <button class="display-font">Click Me</button>
 */
 
+
+button {
+    outline: 0;
+    border: 0;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 100px;
+
+    width: 100%;
+
+    outline: 0;
+    border: 0;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    font-family: var(--base---font--family);
+}
+
+button.large {
+    height: 48px;
+    padding: 0px 24px;
+    gap: 8px;
+}
+
+button.medium {
+    height: 40px;
+    padding: 0px 20px;
+    gap: 8px;
+}
+
+button.small {
+    height: 32px;
+    padding: 0px 16px;
+    gap: 4px;
+}
+
+button.micro {
+    height: 24px;
+    padding: 0px 12px;
+    gap: 4px;
+}
+
+.link.large {
+    /* give a class of text-button-large */
+}
+
+
+
+.primary-button {
+    background: var(--primary-primary-500-base);
+    color: var(--white);
+}
+button.icon-right {
+    flex-direction: row;
+  }
+  button.icon-left {
+    flex-direction: row-reverse;
+  }
