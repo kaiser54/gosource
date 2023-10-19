@@ -1,14 +1,12 @@
 <template>
-  <div>Hello Gosource</div>
+  <div>
+    <DynamicInput v-model="firstName" type="number" class="inputmee" />
+    <p>{{ firstName }}</p>
+  </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup>
+import { ref } from "vue";
 
-<style scoped>
-div {
-  font-size: 5rem;
-  color: black;
-}
-</style>
+const firstName = ref("");
+</script>
