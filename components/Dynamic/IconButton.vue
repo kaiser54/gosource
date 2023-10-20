@@ -8,7 +8,7 @@
     <div v-if="showText && !isLoading">{{ buttonText }}</div>
     <slot v-if="!isLoading" name="svg"></slot>
     <svg
-    :class="svgClass"
+      :class="svgClass"
       v-if="isLoading"
       class="rotating-svg"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,8 +24,8 @@
     </svg>
   </button>
 </template>
-
-<script setup>
+  
+  <script setup>
 import { ref, computed } from "vue";
 
 const { buttonText, size, type, icon, showText, disabled, isLoading } =
@@ -83,9 +83,9 @@ const buttonClasses = computed(() => {
 
 const svgClass = computed(() => {
   return {
-    "micro": size === "micro",
-    "small": size === "small",
-    "medium": size === "medium",
+    micro: size === "micro",
+    small: size === "small",
+    medium: size === "medium",
   };
 });
 
@@ -94,8 +94,8 @@ const emitFunction = () => {
   emit("clickButton");
 };
 </script>
-
-<style scoped>
+  
+  <style scoped>
 svg {
   width: 100%;
 }
@@ -121,3 +121,4 @@ svg.medium {
   animation: rotate 0.5s linear infinite;
 }
 </style>
+  

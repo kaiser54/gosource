@@ -33,7 +33,11 @@ button {
 
     transition: 0.3s;
 
-    font-family: var(--base---font--family);
+    font-family: var(--primary---font--family);
+}
+
+button:disabled {
+    cursor: not-allowed;
 }
 
 button.large {
@@ -60,19 +64,139 @@ button.micro {
     gap: 4px;
 }
 
-.link.large {
-    /* give a class of text-button-large */
-}
-
-
-
 .primary-button {
     background: var(--primary-primary-500-base);
     color: var(--white);
 }
+
+.primary-button:hover {
+    background: var(--primary-primary-600);
+}
+
+.primary-button:active {
+    background: var(--primary-primary-700);
+}
+
+.primary-button:disabled {
+    background: var(--grey-300);
+}
+
+
+.secondary-button {
+    background: var(--white);
+    color: var(--primary-primary-500-base);
+}
+
+.secondary-button:hover {
+    background: var(--primary-primary-50);
+}
+
+.secondary-button:active {
+    background: var(--primary-primary-75);
+}
+
+.secondary-button:disabled {
+    color: var(--grey-300);
+}
+
+
+.neutral-outline {
+    border: 1px solid var(--grey-100);
+    background: var(--White);
+    color: var(--grey-900-base);
+    /* Neutral Button shadow */
+    box-shadow: var(--neutral--button-shadow);
+}
+
+.neutral-outline:hover {
+    border: 1px solid var(--grey-100);
+    background: var(--grey-75);
+}
+
+.neutral-outline:active {
+    border: 1px solid var(--grey-100);
+    background: var(--grey-100);
+}
+
+.neutral-outline:disabled {
+    border: 1px solid var(--grey-100);
+    background: var(--white);
+    color: var(--grey-400);
+}
+
+
+.neutral-filled {
+    background: var(--grey-100);
+    color: var(--grey-900-base);
+}
+
+.neutral-filled:hover {
+    background: var(--grey-200);
+}
+
+.neutral-filled:active {
+    background: var(--grey-300);
+}
+
+.neutral-filled:disabled {
+    background: var(--grey-100);
+    color: var(--grey-400);
+}
+
+.destructive {
+    background: var(--negative-400);
+    color: var(--White);
+}
+
+.destructive:hover {
+    background: var(--negative-600);
+}
+
+.destructive:active {
+    background: var(--negative-700);
+}
+
+.destructive:disabled {
+    background: var(--grey-300);
+    color: var(--white);
+}
+
+.link-primary {
+    color: var(--primary-primary-500-base);
+}
+
+.link-primary:hover {
+    color: var(--primary-primary-600);
+}
+
+.link-primary:active {
+    color: var(--primary-primary-700);
+}
+
+.link-primary:disabled {
+    color: var(--grey-300);
+}
+
+.link-neutral {
+    color: var(--grey-700);
+}
+
+.link-neutral:hover {
+    color: var(--grey-900-base);
+}
+
+.link-neutral:active {
+    color: var(--grey-900-base);
+}
+
+.link-neutral:disabled {
+    color: var(--grey-300);
+}
+
 button.icon-right {
     flex-direction: row;
-  }
-  button.icon-left {
+}
+
+button.icon-left {
     flex-direction: row-reverse;
-  }
+}

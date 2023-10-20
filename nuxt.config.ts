@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   css: [
     "@/assets/css/reset.css",
     "@/assets/css/global.css",
+    "@/assets/css/button.css",
+    "@/assets/css/fonts.css",
+    "@/assets/css/bg-color.css",
+    "@/assets/css/text-color.css",
     "@/assets/font/stylesheet.css",
   ], 
 })

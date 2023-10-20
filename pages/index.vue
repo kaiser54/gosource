@@ -1,6 +1,36 @@
 <template>
   <div>
     <DynamicInput v-model="firstName" type="number" class="inputmee" />
+    <DynamicButton
+      buttonText="Click me"
+      size="micro"
+      type="link-primary"
+      icon="right"
+      :disabled="true"
+      :isLoading="true"
+      @clickButton="handleButtonClick"
+    >
+      <template v-slot:svg>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="chevron-right-arrow">
+            <path
+              id="Vector"
+              d="M6.66699 3.33325L13.3337 9.99992L6.66699 16.6666"
+              stroke="#565C69"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </template>
+    </DynamicButton>
     <p>{{ firstName }}</p>
   </div>
 </template>
@@ -9,4 +39,7 @@
 import { ref } from "vue";
 
 const firstName = ref("");
+const handleButtonClick = () => {
+  // Handle button click here
+};
 </script>
