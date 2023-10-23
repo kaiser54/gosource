@@ -14,7 +14,7 @@
 }
 
 .base-font {
-    font-family: var(--base---font--family);
+    font-family: var(--primary---font--family);
 }
 
 /* Display */
@@ -140,6 +140,11 @@
 /* Heading 5 */
 .text-heading-5-regular {
     font-size: var(--h5---heading-5--regular);
+    line-height: calc(var(--h5---heading-5--regular) * var(--base-line---height));
+}
+.text-heading-5-medium {
+    font-weight: 500;
+    font-size: var(--h5---heading-5--medium);
     line-height: calc(var(--h5---heading-5--regular) * var(--base-line---height));
 }
 

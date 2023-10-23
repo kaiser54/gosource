@@ -6,7 +6,20 @@
    These styles define the primary button appearance.
 
    Usage Example:
-   <button class="display-font">Click Me</button>
+   <DynamicButton
+      buttonText="Click me"
+      size="micro"
+      type="link-primary"
+      icon="right"
+      :disabled="true"
+      :isLoading="true"
+      @clickButton="handleButtonClick"
+    >
+      <template v-slot:svg>
+        <svg
+        </svg>
+      </template>
+    </DynamicButton>
 */
 
 
@@ -200,3 +213,4 @@ button.icon-right {
 button.icon-left {
     flex-direction: row-reverse;
 }
+
