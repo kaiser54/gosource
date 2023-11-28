@@ -87,7 +87,7 @@ button .group {
   gap: calc(var(--spacing-unit) / 2);
 
   border-radius: calc(var(--spacing-unit) + 4);
-  border: 1px solid var(--grey-grey-100);
+  border: 1px solid var(--grey-100);
   background: var(--white);
   box-shadow: var(--shadow---shadow__-medium);
 }
