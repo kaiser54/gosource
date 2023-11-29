@@ -1,23 +1,15 @@
 <template>
   <div
     class="flex border select-card"
-    @click="$emit('selectEvent', data.value)"
     :class="{ selected: selectedItem === data.value }"
+    @mouseover="handleMouseOver"
+    @mouseleave="handleMouseLeave"
+    @click="$emit('selectEvent', data.value)"
   >
     <div class="img-select flex">
       <img :src="data.img" alt="" />
       <div class="radio">
-        <svg viewBox="0 0 25 25" width="25" height="25">
-          <circle cx="12" cy="12" r="11" />
-          <path
-            d="M8.5,12l2.5,2.5L15.5,10"
-            fill="none"
-            stroke="#fff"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <CheckBox :isHovered="isHovered" />
       </div>
     </div>
     <div class="content-flex">
@@ -39,6 +31,16 @@ const { data, selectedItem } = defineProps({
     required: true,
   },
 });
+
+const isHovered = ref(false);
+const handleMouseOver = () => {
+  isHovered.value = true;
+};
+
+const handleMouseLeave = () => {
+  isHovered.value = false;
+};
+
 </script>
 
 <style>
@@ -86,7 +88,8 @@ p {
   transition: all 0.3s ease-out;
 }
 
-.select-card:hover, .select-card:hover svg circle {
+.select-card:hover,
+.select-card:hover svg circle {
   border: 1px solid var(--grey-300, #d0d5dd);
   stroke: var(--grey-300, #d0d5dd);
   opacity: 1;
@@ -99,37 +102,6 @@ p {
   align-items: flex-start;
   align-self: stretch;
 }
-svg {
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-svg circle {
-  stroke: #e4e7ec;
-  stroke-width: 1.66667px;
-  fill: none;
-
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  opacity: 0.5;
-
-  /* transform-origin: center center; */
-  transition: all 0.3s ease-out;
-}
-
-svg path {
-  width: 100px;
-  height: 100px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center center;
-
-  transition: opacity 0.3s, transform 0.3s;
-  transform: scale(0.4);
-  opacity: 1;
-}
 
 .selected {
   border: 1px solid var(--orange-orange-300, #ee806a);
@@ -140,25 +112,4 @@ svg path {
   border: 1px solid var(--orange-orange-300, #ee806a);
 }
 
-.selected svg path {
-  opacity: 1;
-  animation: scaleAnimation 0.3s forwards;
-}
-.selected svg circle {
-  fill: #09420c;
-  animation: scaleAnimation 0.3s forwards;
-}
-
-@keyframes scaleAnimation {
-  0% {
-    transform: scale(0.4);
-  }
-  50% {
-    transform: scale(1.6);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 </style>
