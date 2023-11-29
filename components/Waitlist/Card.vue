@@ -89,6 +89,7 @@ p {
 .select-card:hover, .select-card:hover svg circle {
   border: 1px solid var(--grey-300, #d0d5dd);
   stroke: var(--grey-300, #d0d5dd);
+  opacity: 1;
 }
 
 .img-select {
