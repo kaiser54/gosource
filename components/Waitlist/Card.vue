@@ -56,6 +56,17 @@ h4 {
   line-height: 30px; /* 150% */
   letter-spacing: -0.3px;
 }
+p {
+  color: var(--grey-500, #667185);
+
+  /* Body Small/Body Small Regular */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: -0.2px;
+}
 </style>
 
 <style scoped>
@@ -71,7 +82,14 @@ h4 {
   border-radius: 16px;
   border: 1px solid var(--grey-100, #f0f2f5);
   background: var(--White, #fff);
+
+  transition: all 0.3s ease-out;
 }
+
+.select-card:hover {
+  border: 1px solid var(--grey-300, #d0d5dd);
+}
+
 .img-select {
   width: 100%;
   display: flex;
@@ -111,7 +129,12 @@ svg path {
 }
 
 .selected {
-  background: #e5faec;
+  border: 1px solid var(--orange-orange-300, #ee806a);
+  background: var(--orange-orange-25, #fdf5f4);
+}
+
+.selected:hover {
+  border: 1px solid var(--orange-orange-300, #ee806a);
 }
 
 .selected svg path {
