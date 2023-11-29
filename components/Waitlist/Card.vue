@@ -86,8 +86,9 @@ p {
   transition: all 0.3s ease-out;
 }
 
-.select-card:hover {
+.select-card:hover, .select-card:hover svg circle {
   border: 1px solid var(--grey-300, #d0d5dd);
+  stroke: var(--grey-300, #d0d5dd);
 }
 
 .img-select {
@@ -112,6 +113,7 @@ svg circle {
   opacity: 0.5;
 
   /* transform-origin: center center; */
+  transition: all 0.3s ease-out;
 }
 
 svg path {

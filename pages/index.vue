@@ -36,7 +36,7 @@ const waitlistData = ref([
   {
     title: "GoSource for Business",
     snippet:
-      "Get access to buy on credit, instant invoice, fast payments & 24hours delivery",
+      "Get access to buy on credit, instant invoice, fast payments and 24hours delivery",
     value: "business",
     img:  "/images/business.png",
   },
