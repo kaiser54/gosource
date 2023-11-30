@@ -23,13 +23,17 @@
       </label>
       <span>HTML</span>
     </div>
-    <WaitlistCard
+    <WaitlistProgressBar />
+    <div class="wraper" style="display:flex; gap:16px; align-items:center; justify-content:center;"> 
+      <WaitlistCard
       v-for="(data, index) in waitlistData"
       :key="index"
       :data="data"
       :selectedItem="selectedItem"
       @selectEvent="selectEvent($event)"
     />
+    </div>
+    
     <DynamicButtonNav buttonText="click me please" url="" />
     <p>{{ firstName }}</p>
     <Account name="Agboola t." />
@@ -47,14 +51,14 @@ const waitlistData = ref([
     snippet:
       "Get access to buy on credit, instant invoice, fast payments and 24hours delivery",
     value: "business",
-    img: "/images/business.png",
+    img: "/images/business.svg",
   },
   {
     title: "GoSource for Individual",
     snippet:
       "Buy your food items with discounts, lesser prices and get them in 24hours",
     value: "individual",
-    img: "/images/individual.png",
+    img: "/images/individual.svg",
   },
 ]);
 

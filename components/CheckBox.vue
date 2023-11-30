@@ -53,20 +53,20 @@ svg circle {
 svg path {
   width: 100px;
   height: 100px;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: center center;
+  transform-origin: center center; */
 
   transition: opacity 0.3s, transform 0.3s;
-  transform: scale(0.4);
+  /* transform: scale(0.4); */
   opacity: 1;
 }
 
-path {
-  stroke-dasharray: 5;
-  stroke-dashoffset: 5;
+.selected path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
   animation: check 4s forwards;
 }
 
@@ -78,6 +78,10 @@ svg.onHover circle {
 
 .selected svg path {
   opacity: 1;
+  /* animation: scaleAnimation 0.3s forwards; */
+}
+.selected {
+  opacity: 1;
   animation: scaleAnimation 0.3s forwards;
 }
 .selected svg circle {
@@ -85,12 +89,23 @@ svg.onHover circle {
   animation: scaleAnimation 0.3s forwards;
 }
 
+@keyframes check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes ripple {
+  to {
+    transform: scale(1);
+  }
+}
+
 @keyframes scaleAnimation {
   0% {
-    transform: scale(0.4);
+    transform: scale(0.8);
   }
   50% {
-    transform: scale(1.6);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
